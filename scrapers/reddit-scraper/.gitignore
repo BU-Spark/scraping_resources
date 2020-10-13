@@ -1,0 +1,5 @@
+config.py
+*.pyc
+data/
+checkpoint.txt
+checkpoint_cs.txt
