@@ -1,0 +1,10 @@
+telegram:
+  api_id: 123456
+  api_hash: 'your_api_hash_here'
+  session_name: 'my_session'
+
+scraping:
+  target_group: 'https://t.me/example_group'
+  limit: 1  # Number of posts to scrape
+  download_images: true
+  download_videos: true
