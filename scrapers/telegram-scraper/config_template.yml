@@ -1,0 +1,16 @@
+# Copy (or rename) this file to config.yml and fill in the required fields
+telegram:
+  api_id: 123456
+  api_hash: 'f123x123'
+  session_name: 'name of your session'
+
+scraping:
+  target_group: 'https://telegram.me/group_name'
+  limit: 1000
+  scrape_forward: false  # Set to True to scrape from oldest to newest. The default order is from newest to oldest
+  download_images: true
+  download_videos: true
+  start_date: '2025-04-10' # Optional: format YYYY-MM-DD
+  end_date: '2025-04-12' # Optional: format YYYY-MM-DD, exclusive of last date
+  offset_id: null         # Optional: Use specific message ID to start from
+  offset_date: '2025-04-10'  # Optional: Overrides start_date as pagination hint
