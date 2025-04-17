@@ -87,32 +87,77 @@ After running, the script will generate a folder like:
 
 ## 🧼 Example Output
 
+### Content and message metadata
+
 ```json
 {
-  "1441684517": {
-    "13954242885943317": {
-      "7189": {
-        "grouped_id": 13954242885943317,
-        "datetime": "2025-04-10T10:19:20+00:00",
-        "content": "...",
-        "media_saved": ["image"]
-      },
-      "7190": {
-        "grouped_id": 13954242885943317,
-        "datetime": "...",
-        "content": "",
-        "media_saved": ["image"]
-      }
-    },
-    "7196": {
-      "7196": {
-        "grouped_id": null,
-        "datetime": "...",
-        "content": "...",
-        "media_saved": ["video"]
-      }
+    "1441684517": {
+        "7200": {
+            "grouped_id": 13954964386683269,
+            "datetime": "2025-04-11T11:22:28+00:00",
+            "content": "",
+            "media_saved": [
+                "image"
+            ]
+        },
+        "7199": {
+            "grouped_id": 13954964386683269,
+            "datetime": "2025-04-11T11:22:28+00:00",
+            "content": "",
+            "media_saved": [
+                "image", "video"
+            ]
+        },
+        "7198": {
+            "grouped_id": 13954964386683269,
+            "datetime": "2025-04-11T11:22:28+00:00",
+            "content": "",
+            "media_saved": [
+                "image"
+            ]
+        },
     }
-  }
+}
+```
+
+### Current run metadata
+
+```json
+{
+    "channel_name": "",
+    "channel_id": 1441684517,
+    "channel_url": "https://t.me/url",
+    "first_message_datetime": "2025-04-10T10:19:20+00:00",
+    "last_message_datetime": "2025-04-11T11:22:28+00:00",
+    "message_count": 11,
+    "image_count": 10,
+    "video_count": 1,
+    "config_used": {
+        "target_group": "https://telegram.me/url",
+        "limit": 1000,
+        "start_date": "2025-04-10T00:00:00+00:00",
+        "end_date": "2025-04-12T00:00:00+00:00",
+        "scrape_forward": false,
+        "offset_id": null,
+        "offset_date": "2025-04-10T00:00:00+00:00",
+        "download_images": true,
+        "download_videos": true
+    }
+}
+```
+
+### Channel metadata
+
+```json
+{
+    "channel_name": "name",
+    "channel_id": 1441684517,
+    "channel_url": "https://t.me/name",
+    "total_message_count": 6691,
+    "first_message_id": 1,
+    "first_message_datetime": "2022-09-24T07:42:27+00:00",
+    "last_message_id": 7220,
+    "last_message_datetime": "2025-04-17T19:00:08+00:00"
 }
 ```
 
