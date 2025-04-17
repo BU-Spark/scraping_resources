@@ -5,7 +5,13 @@ This Python script scrapes tweet metadata and media (images, videos) from a publ
 - 🧠 **Vercel-style token workaround** to access embedded tweet data 
 - 🕵️ **Selenium** to scrape tweet IDs directly from a user's timeline
 
-[Vercel-style workaround source](https://github.com/JustAnotherArchivist/snscrape/issues/996)
+
+
+"Vercel's react-tweet now has a bit of a workaround. They figured out that you can use the Twitter embed API to get data from any tweet. Usually, you'd need a special token to get any data but they reverse engineered the token and you can generate it yourself using the tweet id."
+
+[Discussion thread](https://github.com/JustAnotherArchivist/snscrape/issues/996)
+
+[Vercel workaround source](https://github.com/vercel/react-tweet/blob/main/packages/react-tweet/src/api/fetch-tweet.ts)
 
 ## 📦 Features
 
