@@ -1,0 +1,15 @@
+# config_template.yml
+auth:
+  username: your_x_username
+  password: your_x_password
+
+scraping:
+  # You can either provide a username to fetch tweets from...
+  username: "BU_Tweets"
+
+  # ...or specify tweet IDs directly.
+  # If tweet_ids is provided, username is ignored.
+  tweet_ids: null
+
+  # Maximum number of tweets to fetch from the user (if username is used)
+  limit: 20
